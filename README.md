@@ -50,7 +50,7 @@ The following action will teach you how to create an IFTT action with the IFTTT 
         print "Random ARP packet from mac = " + source_mac
 ```
 
-13. In the code section above, insert the https://maker.ifttt.com/trigger/{event}/with/key/ + key with your event name and key into the parenthesis that follow the get request line. (You should be able to find the key on the documentation page. 
+13. In the code section above, modify your code and insert the https://maker.ifttt.com/trigger/{event}/with/key/ + key with your event name and key into the parenthesis that follow the get request line. (You should be able to find the key on the documentation page. 
 
 14. For the post URL, enter in the same URL you did for the get requests.
 
