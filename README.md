@@ -29,4 +29,30 @@ The following action will teach you how to create an IFTT action with the IFTTT 
 
 9. You're done setting up IFTTT! Give yourself a pat on the back.
 
-10. 
+10. We will only be modifying a few lines of the code, not everything. Open up or clone the 'dash.py'. For reference, it is located in the Python folder.
+
+11. Return to the Maker Webhooks screen (search Maker Webhooks again).
+
+12. Hit the 'documentation' option.
+
+```python
+ if source_mac == first:
+        print "First Dash button was pressed! From IP = " + dest_ip
+        # insert ifttt get and post request below, see instructions for more detailed instructions
+        r = requests.get('')
+        r = requests.post('', data = { "value1" : "hi", "value2" : "does", "value3" : "work" } )
+    elif source_mac == second:
+        print "Second Dash button was pressed! From IP = " + dest_ip
+        r = requests.get('')
+        r = requests.post('', data = { "value1" : "hi", "value2" : "does", "value3" : "work" } )
+    else:
+        print "Random ARP packet from mac = " + source_mac
+```
+
+13. In the code section above, insert the https://maker.ifttt.com/trigger/{event}/with/key/ + key with your event name and key into the parenthesis that follow the get request line. (You should be able to find the key on the documentation page. 
+
+14. For the post URL, enter in the same URL you did for the get requests.
+
+15. Lastly, press and hold on your Amazon Dash button until the blue light starts blinking.
+
+16. On a Wifi-enabled device, connect to the Wifi service Amazon ConfigureMe.
