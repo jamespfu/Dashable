@@ -3,10 +3,11 @@ Dashable is a python script for the Amazon Dash, easily enabling you to automate
 This script for an entrepreneurship project that we did in school.
 
 ## Website
-You can visit the website we created at the url https://dashable.cf/.
+You can visit the UI for the e-commerce website we created at the url https://dashable.cf/.
 
 ## Python
-The Python code 
+The Python code can be found in the 'Python' folder. :)
+
 ## Instructions
 ### Connecting to IFTTT
 The following action will teach you how to create an IFTT action with the IFTTT Maker Webhooks platform. 
@@ -64,3 +65,7 @@ The following action will teach you how to create an IFTT action with the IFTTT 
 19. If you do not have two Amazon Dashes, you can just delete the elif source_mac == second statement, and also the variable that stores the mac address of the second dash
 
 20. You're all set! Save the code and run it with SUDO! Make sure that you have connected it with the Amazon Shopping app and that your Dash is connected to wifi, and not assigned to a product (to prevent accidental purchases).
+
+## Issues
+### Contact
+If you have any issues with completing the following steps, find a bug, or if you just have a general question about Amazon Dash or this code feel free to email me at kawaiikid47@gmail.com. I normally respond within 24 hours.
