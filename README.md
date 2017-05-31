@@ -13,7 +13,7 @@ The following action will teach you how to create an IFTT action with the IFTTT 
 
 1. You will first need to sign up and create an account at the URL https://ifttt.com/.
 
-2. After creating your account, click the search button. Search for Maker Webhooks, and then press the connect button.
+2. After creating your account, click the search button. Search for Maker Webhooks, and then press the 'connect' button.
 
 3. Go to 'My Applets'.
 
@@ -23,4 +23,10 @@ The following action will teach you how to create an IFTT action with the IFTTT 
 
 6. You will be prompted to a screen that asks you to choose a trigger. Choose the 'Receive a web request' trigger, and create a new event name. You can name it anything you want!
 
-7. Click on the 'that' button. You will be prompted to a screen, with many options, all of which you can choose to trigger when the Dash button is pressed. A few of the ones I recommend trying are the SMS, Phone Call and Philips Hue
+7. Click on the 'that' button. You will be prompted to a screen, with many options, all of which you can choose to trigger when the Dash button is pressed. A few of the ones I recommend trying are the SMS, Phone Call and Philips Hue events.
+
+8. Create the action, modify it if you would like to. You will be prompted to a page that asks you to Review and Finish. After you are sure that you have finished, hit the 'finish' button.
+
+9. You're done setting up IFTTT! Give yourself a pat on the back.
+
+10. 
