@@ -1,0 +1,966 @@
+html, body {
+    font-family: "Montserrat","Raleway", Verdana, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.semi-bold {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.serveon-main {
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-weight: 400;
+}
+.information-odds {
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  color: #fff;
+  font-size: 26px;
+  width: 100%;
+  display: inline-block;
+   background-color: #50A6C2;
+  /*box-shadow: 0px 2px 5px #555;*/
+  margin: 0;
+  padding: 2em 10px;
+}
+
+.information-evens {
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  font-size: 17px;
+  width: 100%;
+  display: inline-block;
+  background: #ffffff;
+  margin: 0;
+  padding: 2em 10px;
+}
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-shadow: 0.04em 0.04em #ccc;
+    border-bottom: 1px solid #ddd;
+    padding: 0.7em;
+    margin-top: 0;
+}
+.white {
+    color: white;
+}
+
+.infopadding {
+    padding-top: 2em;
+}
+/*
+.brand-holder {
+    box-shadow: 0px 2px 5px #555;
+}
+*/
+
+.purple {
+    color: #50A6C2;
+}
+.orange {
+    color: #fff;
+}
+
+.padder-top {
+    padding-top: 10px;
+}
+.menuholder {
+    text-align: center;
+    padding: 0;
+    margin: 2em 0;
+    background: transparent;
+}
+.navli {
+    padding: 0 3%;
+    font-family: "Raleway";
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.navli:hover {
+    color: #fff;
+    transition: color ease-in 0.2s;
+}
+#searchbarlabel {
+    margin-right: 0.3em;
+}
+#searchbar {
+    border-radius: 5px;
+    padding-left: 0.3em;
+    color: #fff;;
+}
+#searchbar:focus {
+    outline: none;
+}
+.footer {
+    font-size: 17px;
+    width: 100%;
+    display: inline-block;
+    background: #ffffff;
+    margin: 0;
+    padding: 1em 10px;
+}
+.footercontentspacer {
+    width: 100% !important;
+    margin: 0;
+    background-color: #50A6C2;
+}
+.contacticons {
+    float: left;
+    margin: 0.1em 1em;
+}
+.contacticons:hover {
+    width: 38px;
+    box-shadow: 1px 1px 2px #aaa;
+    border-radius: 50px;
+}
+.brand,.brand:hover {
+	display: inline;
+	position: relative;
+	font: 50px "Poppins";
+	letter-spacing: -1.25px;
+	color: #b4c4f3;
+	text-decoration: none;
+}
+ 
+.brand:after {
+	content: "SERVEON";
+	position: absolute; left: 2.5px; top: 1.25px;
+	color: #4169E1;   
+}
+
+.x {
+    transition: all .1s ease-in;
+    text-decoration: dotted;
+}
+.x:hover {
+    /*text-shadow: 3px 3px 2px #cbcbcb;*/
+    letter-spacing: 1.2vh;
+    transition: letter-spacing ease-in-out 0.5s;
+    /*transition: text-shadow ease-in-out 1s;*/
+}	
+/*.brand:hover {
+    color: #50A6C2;
+    transition: color ease-in-out 0.2s;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px transparent;
+}*/
+.mainheader {
+    font-weight: 500;
+}
+.maininfo {
+    font-weight: 300;
+}
+.headerlink {
+    color: #fff;
+}
+.headerlink:hover {
+    text-decoration: none;
+    color: rgba(0, 102, 204, 0.8);
+}
+.headerlink:visited {
+    text-decoration: none;
+    color: #50A6C2;
+}
+.imgdivider {
+    max-width: 100%;
+    width: 100%;
+    min-width: 20%;
+    margin: 0;
+    padding: 0;
+}
+.divider-holder {
+    margin: 0;
+    padding: 0;
+}
+.pageheader {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+.pagedescriptor {
+    font-family: "Raleway";
+}
+.inputcontainer {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.input {
+    padding: 3px 9px;
+    border-radius: 4px;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 15em;
+    font-family: "Raleway";
+    background: transparent !important;
+    height: 2.7em;
+    font-weight: 500;
+}
+.subclaimtext {
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: 500;
+}
+#age {
+    color: #50A6C2;
+}
+.serveonbutton {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "Raleway";
+    padding: 0.3em 0.5em;
+    font-weight: 500;
+}
+.serveonbutton:hover {
+    color: #fff;
+    background-color: #50A6C2;
+    border: 2px solid #50A6C2;
+    transition: color ease-in 0.4s;
+    transition: background-color ease-in 0.1s;
+}
+.serveonbutton:focus {
+    outline: none;
+}
+.subclaim {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#searchbar {
+    background: transparent;
+    border-bottom: 2px solid #50A6C2;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    padding-bottom: 2px;
+}
+#searchbutton {
+    background: transparent;
+    padding: 0.3em 0.5em;
+    color: #ffffff;
+    border-color: #fff;
+}
+#searchbutton:hover {
+    border-color: #50A6C2;
+    color: #fff;
+    background-color: #50A6C2;
+    transition: color ease-in 0.4s;
+    transition: background-color ease-in 0.1s;
+}
+#searchbutton:focus {
+    outline: none;
+}
+.copyright {
+    font-weight: 300;
+}
+
+nav a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.madeby {
+    padding-top: 9px;
+    display: inline-block;
+    color: white;
+}
+
+.footerpadding {
+    padding-top: 15px;
+}
+
+.additionalinfobutton {
+  display: inline-block;
+  padding: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-right: 5px;
+  height: 50px;
+  min-width: 100px;
+  background: #50A6C2;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.button:active {
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  box-shadow: none;
+}
+
+#googlemaps { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+#contactform { 
+  position: relative; 
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  width: 300px;
+  margin: 60px auto 0;
+  padding: 10px;
+  background: black;
+  height: auto;
+  opacity: .45; /* Set the opacity for a slightly transparent Google Form */ 
+  color: white;
+}
+
+.google-map .container-fluid {
+    padding-right: 0px; padding-left: 0px; position: relative; 
+}
+
+#google-map {
+    padding: 0; 
+}
+#map-canvas {
+    width: 100%;
+    height: 900px;
+}
+.google-map {
+    margin-top: 30px;
+}
+
+.profiles {
+    width: 50px; height: 50px;
+}
+
+.serveonbtn-main {
+  box-sizing: border-box;
+  color: #fff !important;
+  background: transparent;
+}
+
+
+.serveonbtn-main a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+}
+
+.serveonbtn-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60px;
+    width: 240px;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    font-family: "Raleway";
+    letter-spacing: 4px;
+    position: relative;
+    padding: 0.25em 0.5em;
+    color: #fff;
+    font-weight: 900;
+}
+.serveonbtn-main:before, .serveonbtn-main:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3.2px solid #fff;
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.serveonbtn-main:hover:before, .btn:hover:after, .serveonbtn {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.serveonbtn-main:hover:before {
+    -webkit-transform: translate3d(-3px, 3px, 0);
+    transform: translate3d(-3px, 3px, 0);
+}
+.serveonbtn-main:hover:after {
+    -webkit-transform: translate3d(3px, -3px, 0);
+    transform: translate3d(3px, -3px, 0);
+}
+.serveonbtn {
+  box-sizing: border-box;
+  color: #000 !important;
+}
+
+
+.serveonbtn a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #000;
+}
+
+.serveonbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 8vh;
+    width: 32vh;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-family: "Raleway";
+    letter-spacing: 4px;
+    position: relative;
+    padding: 0.25em 0.5em;
+    color: #252525;
+    font-weight: 900;
+}
+.serveonbtn:before, .serveonbtn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3.2px solid #252525;
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.serveonbtn:hover:before, .btn:hover:after {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.serveonbtn:hover:before {
+    -webkit-transform: translate3d(-3px, 3px, 0);
+    transform: translate3d(-3px, 3px, 0);
+}
+.serveonbtn:hover:after {
+    -webkit-transform: translate3d(3px, -3px, 0);
+    transform: translate3d(3px, -3px, 0);
+}
+.robotoslab {
+    font-family: "Poppins";
+}
+.socialicon {
+    display: inline-block;
+    opacity: 0.7;
+    color: #aaa !important;
+}
+.socialicon:hover {
+    color: #50A6C2 !important; 
+    opacity: 1;
+    transition: color ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.25s;
+}
+.socialicon:visited, .socialicon:focus {
+    display: inline-block;
+    opacity: 0.7;
+}
+.currentpage {
+    color: #fff !important;
+    font-weight: 900;
+}
+/*input, textarea {
+  color : #50A6C2;
+}*/
+.controls {
+    color: #fff;
+    opacity: 1;
+}
+.controls:hover, .controls:visited, .controls:focus {
+    color: #fff;
+    opacity: 0.8;
+}
+#subscribebtn {
+    margin: 0;
+    color: #fff;
+    background-color: #50A6C2;
+    border: none;
+    /*padding: 0.5em 0.5em;*/
+    border-radius: 0;
+    /*padding: 0.49em 0.65em;*/
+    padding: 0;
+    opacity: 0.8;
+    height: 3em;
+    width: 7em;
+    margin-top: 0;
+}
+#subscribebtn:hover, #subscribebtn:visited, #subscribebtn:focus {
+    opacity: 1;
+    outline: none;
+}
+#subscribe {
+    border: 0.125em solid #ccc;
+    border-radius: 0;
+    padding: 0.48em 0.6em;
+    height: 3em;
+    width: 15em;
+    margin: 0;
+}
+#subscribe:hover, #subscribe:visited, #subscribe:focus {
+    outline: none;
+    border: 0.125em solid #50A6C2;
+    transition: border ease-in-out 0.3s;
+}
+.footersection {
+    padding: 2em;
+}
+.footerlist {
+    display: inline;
+    list-style-type: none;
+    list-style-position: inside;
+    color: #50A6C2;
+}
+.img-circle {
+    border-radius: 100%;
+}
+.additionallink, .additionallink:hover, .additionallink:visited, .additionallink:focus {
+    line-height: 25px;
+    display: block !important;
+    color: #50A6C2 !important;
+}
+.privacyandterms {
+    color: #50A6C2 !important;
+    opacity: 0.8;
+}
+.privacyandterms:hover {
+    opacity: 1;
+}
+.allrightsreserved {
+    font-family: "Raleway";
+    color: #aaa;
+    font-weight: 500;
+    line-height: 20px;
+}
+.subscriptionholder {
+    padding: 2em;
+}
+.hvr-grow {
+    -webkit-filter: blur(1);
+}
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+.fa-arrow-right :hover{
+    padding-left: 20px;
+    transition: padding-left ease-in 0.7s;
+}
+#splash {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*transition: background-image ease-in 3.5s;*/
+}
+.splash {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('https://preview.c9users.io/jamesnotfu/dashable/Images/mike-dennler-173199.jpg?_c9_id=livepreview4&_c9_host=https://ide.c9.io');
+    /*transition: background-image ease-in 3.5s;*/
+}
+.splash2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*background-image: url('https://preview.c9users.io/jamesnotfu/dashable/Images/matt-howard-248418.jpg?_c9_id=livepreview1&_c9_host=https://ide.c9.io')*/
+    background-color: #50A6C2
+}
+
+.informer {
+    background: transparent;
+    font-family: 'Montserrat';
+    color: #fff;
+    /* padding: 2em; */
+    text-align: center;
+    font-weight: 100;
+}
+.informheader {
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+.shop {
+    color: #fff;
+}
+.navli a:hover, .navli a:focus {
+    color: #50A6C2;
+    transition: color ease-in-out 0.2s;
+}
+.hometitle {
+    letter-spacing: 0.16em;
+    text-align: center;
+    font-size: 4em;
+    max-width: 100%;
+}
+nav {
+    margin-bottom: 2em;
+}
+.informerend {
+    background-color: #50A6C2;
+    color: #fff;
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+}
+
+.informerendshop {
+    background-color: #fff;
+    color: #50A6C2;
+    margin: 0;
+    padding: 2em;
+    text-align: center;
+}
+.messageicon {
+    font-size: 7em;
+    text-align: center;
+}
+.a {
+    margin: 0;
+    padding: 0;
+}
+.blue {
+    color: #50A6C2;
+}
+@media (max-width: 700px) {
+    .hometitle {
+        font-size: 2.5em;
+    }
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pigeon {
+    width: 36px;
+}
+.loader {
+    z-index: 2000;
+}
+#n {
+    margin: 0 !important;
+}
+.signupform {
+    margin-top: 9em !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+#loginemail, #loginpassword, .input:focus { 
+    border: 2px solid white !important;
+    outline: none;
+}
+
+.subscribeinput:focus {
+    outline: none;
+    border: 2px solid #50A6C2;
+    transition: border ease-in 0.2s;
+}
+
+#slideSource {
+    opacity:1;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;     
+    transition: opacity 3s;
+}
+
+#slideSource.fade {
+    opacity:0;
+}
+
+.card {
+  box-sizing: border-box;
+}
+.card {
+  width: 650px;
+  position: absolute;
+  background: white;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card nav {
+  width: 100%;
+  color: #727272;
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 2px solid #efefef;
+  font-size: 12px;
+}
+.card nav svg.heart {
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin-top: -3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card nav svg.heart:hover {
+  fill: red;
+}
+.card nav svg.arrow {
+  float: left;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.card .photo {
+  padding: 30px;
+  width: 45%;
+  text-align: center;
+  float: left;
+}
+.card .photo img {
+  max-height: 240px;
+}
+.card .description {
+  padding: 30px;
+  float: left;
+  width: 55%;
+  border-left: 2px solid #efefef;
+}
+.card .description h1 {
+  color: #515151;
+  font-weight: 300;
+  padding-top: 15px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+.card .description h2 {
+  color: #515151;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.card .description h4 {
+  margin: 0;
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+.card .description p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #727272;
+  padding: 20px 0;
+  margin: 0;
+}
+.card .description button {
+  outline: 0;
+  border: 0;
+  background: none;
+  border: 1px solid #d9d9d9;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+  color: #515151;
+  text-transform: uppercase;
+  width: 125px;
+  font-family: inherit;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.card .description button:hover {
+  border: 1px solid #50A6C2;
+  color: #50A6C2;
+  cursor: pointer;
+}
+#shop {
+    background: url('https://preview.c9users.io/jamesnotfu/dashable/Images/artsysunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5em;
+    background-position: center;
+}
+.basket {
+    font-size: 6em;
+}
+.shopinformerend {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+.shopitem {
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    border: none;
+    padding: 0 !important;
+    margin-right: 1.666666%;
+    margin-bottom: 1.666666%;
+}
+@media (max-width: 700px) {
+    .shopitem {
+        margin-bottom: 4.666666%;
+        margin-right: 4.666666%;
+    }
+}
+.shopitem:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.4);
+    transition: box-shadow ease-in 0.1s;
+    
+}
+.cardimg {
+    width: 100%;
+    height: 50%;
+}
+.carddescription {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+.viewfull a {
+    color: #333 !important;
+}
+.viewfull a:hover {
+    color: #50A6C2 !important;
+    transition: color 0.2s;
+}
+.price {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.liked {
+    color: pink;
+}
+.imagepad {
+    padding: 2em;
+}
+.profiles {
+    width: 50px; height: 50px;
+}
+.img-circle {
+    border-radius: 100%;
+}
+.fullviewimg {
+    width: 40%;
+}
+.fullviewbox {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    padding: 2em 0;
+}
+.fullimgcontainer {
+    margin: auto;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    .fullviewimg {
+        width: 70%;
+    }
+}
+.color {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    opacity: 0.8;
+}
+.color:hover {
+    opacity: 1;
+    transition: opacity ease-in 0.1s;
+}
+.colorpicker {
+    width: 20%;
+}
+#quantity {
+    width: 4em;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+#quantity:hover, #quantity:focus {
+    border: 1px solid #999;
+    outline: none;
+    transition: border ease-in 0.2s;
+}
+#about {
+    margin-bottom: 2.2em;
+}
+.fulltextcontainer {
+    padding: 1em;
+}
+.bandimg {
+    height: 25vw;
+    width: 23vw;
+}
+@media (max-width: 700px) {
+    .bandimg {
+        height: 55vw;
+        width: 45vw;
+    }
+}
+#counter {
+    font-size: 45px;
+    margin: 30px 0;
+}

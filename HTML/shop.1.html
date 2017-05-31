@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Dashable</title>
+	<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase-app.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase-auth.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js">
+	</script>
+	<script>
+	         // Initialize Firebase
+	         var config = {
+	           apiKey: "AIzaSyDoCeUFRrGRT6Bw0Tsoiag4mFcZrg1Mq8g",
+	           authDomain: "serveon-f54f2.firebaseapp.com",
+	           databaseURL: "https://serveon-f54f2.firebaseio.com",
+	           projectId: "serveon-f54f2",
+	           storageBucket: "serveon-f54f2.appspot.com",
+	           messagingSenderId: "89720750647"
+	         };
+	         firebase.initializeApp(config);
+	</script>
+	<meta charset="UTF-8"><!-- Mobile Friendly Code -->
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'><!-- Bootstrap -->
+	<link href="https://preview.c9users.io/jamesnotfu/dashable/bootstrap-3.3.7-dist/css/bootstrap.css?_c9_id=livepreview1&_c9_host=https://ide.c9.io" rel="stylesheet" type="text/css"><!-- jQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+	</script><!-- Custom CSS -->
+	<link href="https://preview.c9users.io/jamesnotfu/dashable/CSS/dashable.css?_c9_id=livepreview7&_c9_host=https://ide.c9.io" rel="stylesheet" type="text/css"><!-- Preloder CSS -->
+	<link href="https://preview.c9users.io/jamesnotfu/dashable/CSS/preloader.css?_c9_id=livepreview1&_c9_host=https://ide.c9.io" rel="stylesheet" type="text/css"><!-- Navbar CSS/JS -->
+	<link href="https://preview.c9users.io/jamesnotfu/dashable/CSS/navbar.css?_c9_id=livepreview6&_c9_host=https://ide.c9.io" rel="stylesheet" type="text/css">
+	<script src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/JS/navbar.js?_c9_id=livepreview1&_c9_host=https://ide.c9.io" type="text/javascript">
+	</script><!-- Custom JS/jQuery -->
+
+	<script src="https://preview.c9users.io/jamesnotfu/dashable/JS/dashable.js?_c9_id=livepreview3&_c9_host=https://ide.c9.io" type="text/javascript">
+	</script><!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Open+Sans:300,400,600|Raleway:200,300,400,500|Poppins:200,300,400,500|Roboto+Slab:200,300,400,500" rel="stylesheet"><!-- Favicon/Logo -->
+	<link href="" rel="shortcut icon"><!-- Hover Effects -->
+	<link href="https://preview.c9users.io/jamesnotfu/jamesfu/Hover-master/css/hover.css" rel="stylesheet" type="text/css"><!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- Typing Animation -->
+
+	<script src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/JS/typinganimation.js?_c9_id=livepreview5&_c9_host=https://ide.c9.io">
+	</script>
+	<script src="https://preview.c9users.io/jamesnotfu/dashable/JS/background.js?_c9_id=livepreview4&_c9_host=https://ide.c9.io" type="text/javascript">
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid center-block text-center" id="shop">
+			<nav>
+                <div>
+                    <br/>
+                    <h3 class="text-center bold">
+                        <a class="serveonbtn-main center-block x" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/home.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">DASHABLE</a>
+                    </h3>
+                    <br/>
+                    <div>
+                        <div class="container-fluid">
+                            <h5 class="menuholder">
+                                <ul class="menuWrapper">
+                                    <li class="navli"><a  class="navlink" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/home.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">Home&nbsp;<i class="fa fa-home fa-fw"></i></a></li>
+                            	 <!--   <li class="navli"><a class="navlink" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/signup.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">Sign Up&nbsp;<i class="fa fa-user-plus fa-fw"></i></a></li>-->
+                        		    <!--<li class="navli"><a class="navlink" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/login.html?_c9_id=livepreview3&_c9_host=https://ide.c9.io">Login&nbsp;<i class="fa fa-user fa-fw"></i></a></li>-->
+                        		    <li class="navli"><a class="navlink" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/about.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io">About Us&nbsp;<i class="fa fa-users fa-fw"></i></a></li>
+                        		    <li class="navli"><a class="navlink currentpage" href="https://preview.c9users.io/jamesnotfu/dashable/HTML/shop.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io">Shop&nbsp;<i class="fa fa-cart-plus fa-fw"></i></a></li>
+                        		    <!--<li class="navli"><a class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonmeettheteam.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">Meet the Team</a></li>-->
+                        		    <!--<li class="navli">-->
+                		            <!--    <label id="searchbarlabel" onclick="searchshow()" for="searchbar"><span class="fa fa-search"></span></label>-->
+                        		    <!--    <input id="searchbar" type="search" name="search"/>-->
+                        		    <!--    <button id="searchbutton" class="btn btn-default">GO</button>-->
+                        		    <!--</li>-->
+                        	    </ul>
+                            </h5>
+                    	</div>
+                    </div>
+                </div>
+            </nav>
+		<br>
+
+
+		<section class="informer col-md-12 container">
+			<h2 class="hometitle col-md-12 container">PRE-ORDER DASHABLE</h2>
+			<br/>
+			<h1 class="basket"><i class="fa fa-shopping-basket fa-fw"></i></h1>
+			<br/>
+			<h4 class="informheader">V.I.P. Access To Our Latest Product</h4>
+		</section>
+	</div>
+
+
+	<section class="shopinformerend">
+		<div class="itemholder center-block">
+			<div class="shopitem col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div>
+					<img class="cardimg" src="https://preview.c9users.io/jamesnotfu/dashable/Images/dash.jpg?_c9_id=livepreview2&_c9_host=https://ide.c9.io">
+					<div class="carddescription">
+						<h3>Dashable</h3>
+						<h5>A fast device to connect with your loved ones, as well as track fitness.</h5>
+						<h5 class="viewfull"><a href="https://preview.c9users.io/jamesnotfu/dashable/HTML/item1.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">View&nbsp;<i class="fa fa-angle-double-right fader"></i></a></h5>
+						<h4 class="price">$12.00&nbsp;<i class="fa fa-heart fa-fw" id="heart1" onclick="heart1()"></i></h4>
+					</div>
+				</div>
+			</div>
+			<div class="shopitem col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div>
+					<img class="cardimg" src="https://preview.c9users.io/jamesnotfu/dashable/Images/dash.jpg?_c9_id=livepreview2&_c9_host=https://ide.c9.io">
+					<div class="carddescription">
+						<h3>Bands</h3>
+						<h5>Additional or replacement bands for your Dashable tracker.</h5>
+						<h5 class="viewfull"><a href="https://preview.c9users.io/jamesnotfu/dashable/HTML/item2.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">View&nbsp;<i class="fa fa-angle-double-right fader"></i></a></h5>
+						<h4 class="price">$5.00&nbsp;<i class="fa fa-heart fa-fw" id="heart2" onclick="heart2()"></i></h4>
+					</div>
+				</div>
+			</div>
+			<div class="shopitem col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div>
+					<img class="cardimg" src="https://preview.c9users.io/jamesnotfu/dashable/Images/dash.jpg?_c9_id=livepreview2&_c9_host=https://ide.c9.io">
+					<div class="carddescription">
+						<h3>Batteries</h3>
+						<h5>Rechargeable AAA batteries, long battery guaranteed.</h5>
+						<h5 class="viewfull"><a href="https://preview.c9users.io/jamesnotfu/dashable/HTML/item3.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">View&nbsp;<i class="fa fa-angle-double-right fader"></i></a></h5>
+						<h4 class="price">$12.00&nbsp;<i class="fa fa-heart fa-fw" id="heart3" onclick="heart3()"></i></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			<!--	<div>-->
+			<!--		<img class="cardimg" src="https://preview.c9users.io/jamesnotfu/dashable/Images/dash.jpg?_c9_id=livepreview2&_c9_host=https://ide.c9.io">-->
+			<!--		<div class="carddescription">-->
+			<!--			<h3>Bands</h3>-->
+			<!--			<h5>Additional or replacement bands for your Dashable tracker.</h5>-->
+			<!--			<h5 class="viewfull"><a href="#">View&nbsp;<i class="fa fa-angle-double-right fader"></i></a></h5>-->
+			<!--			<h4>$5.00&nbsp;<i class="fa fa-heart-o fa-fw"></i></h4>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			<!--	<div>-->
+			<!--		<img class="cardimg" src="https://preview.c9users.io/jamesnotfu/dashable/Images/dash.jpg?_c9_id=livepreview2&_c9_host=https://ide.c9.io">-->
+			<!--		<div class="carddescription">-->
+			<!--			<h3>Batteries</h3>-->
+			<!--			<h5>Grade A batteries, long battery guaranteed.</h5>-->
+			<!--			<h5 class="viewfull"><a href="#">View&nbsp;<i class="fa fa-angle-double-right fader"></i></a></h5>-->
+			<!--			<h4>$12.00&nbsp;<i class="fa fa-heart-o fa-fw"></i></h4>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			<!--	<div class="fullview">-->
+			<!--		<div class="viewinfull">-->
+			<!--			hello-->
+			<!--		</div>-->
+			<!--	</div>				-->
+	<script type="text/javascript">
+            $(".hometitle").hide();
+            $(".fullview").hide();
+            $(document).ready(function() {
+                $(".hometitle").fadeIn(700);
+            });
+            function y() {
+                $(".fader").fadeOut(1000);
+                $(".fader").fadeIn(1000);
+                y();
+            }
+            function x() {
+                setInterval(y(), 100);
+            }
+            x();
+            function heart1() {
+            	$("#heart1").toggleClass("liked");
+            }
+            function heart2() {
+            	$("#heart2").toggleClass("liked");
+            }
+            function heart3() {
+            	$("#heart3").toggleClass("liked");
+            }
+      </script>
+	<footer class="container footerpadding col-md-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 footersection">
+			<div class="text-center subscriptionholder">
+				<h5 class="blue">Subscribe for tips, updates and special offers:</h5>
+
+
+				<form action="//c9users.us15.list-manage.com/subscribe/post?u=d4292080ad064f941cce6dc2f&amp;id=851d359a58" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+					<div class="row">
+						<input class="required email" id="subscribe" name="EMAIL" placeholder="Enter Email" type="email" value=""> <label class="mc_embed_signup_scroll" for="subscribe"><button id="subscribebtn"><label class="mc_embed_signup_scroll" for="subscribe" id="n">Subscribe</label></button></label>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="footersection text-center">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<ul class="footerlist">
+					<li style="list-style: none; display: inline">
+						<h4 class="blue">Contact Us</h4>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="">8151 Village Pkwy, Dublin,<br>
+						CA 94568</a>
+					</li>
+
+
+					<li style="list-style: none"><br>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="tel:+1-925-875-8886">(925) 875-8886</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<ul class="footerlist">
+					<li style="list-style: none; display: inline">
+						<h4>Additional Links</h4>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="">Pre-order Dashable</a>
+					</li>
+
+					<li>
+						<a class="additionallink hvr-grow" href="">Organize Events</a>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="">Help</a>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="">FAQs</a>
+					</li>
+
+
+					<li>
+						<a class="additionallink hvr-grow" href="">Feedback</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="footersection text-center">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h3><a class="socialicon" href="#"><i class="fa fa-facebook fa-fw"></i></a> &nbsp; <a class="socialicon" href="#"><i class="fa fa-twitter fa-fw"></i></a> &nbsp; <a class="socialicon" href="#"><i class="fa fa-instagram fa-fw"></i></a> &nbsp; <a class="socialicon" href="#"><i class="fa fa-google-plus fa-fw"></i></a> &nbsp; <a class="socialicon" href="#"><i class="fa fa-github fa-fw"></i></a> &nbsp; <a class="socialicon" href="mailto:"><i class="fa fa-envelope fa-fw"></i></a></h3>
+				<br>
+
+
+				<h5 class="allrightsreserved">&copy;Dashable. All Rights Reserved. Dashable is a registered trademark of the Dashable Group. <a class="privacyandterms" href="#">Privacy</a> and <a class="privacyandterms" href="#">Terms</a></h5>
+				<br>
+			</div>
+		</div>
+	</footer>
+	<script src="https://preview.c9users.io/jamesnotfu/dashable/bootstrap-3.3.7-dist/js/bootstrap.min.js?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+	</script> 
+	<!-- Coded by Rishi Pappu and James Fu (and a tiny bit by Ayla but not really)-->
+</body>
+</html>

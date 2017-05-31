@@ -1,0 +1,50 @@
+.loader {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 3.5em;
+  opacity: 0.8;
+}
+.loader span {
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+          animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader span:nth-child(odd) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+#loader {
+    opacity: 1;
+    position: fixed;
+    background-color: #50A6C2;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

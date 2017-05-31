@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ServeOn</title>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyDoCeUFRrGRT6Bw0Tsoiag4mFcZrg1Mq8g",
+            authDomain: "serveon-f54f2.firebaseapp.com",
+            databaseURL: "https://serveon-f54f2.firebaseio.com",
+            projectId: "serveon-f54f2",
+            storageBucket: "serveon-f54f2.appspot.com",
+            messagingSenderId: "89720750647"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <meta charset="UTF-8">
+        <!-- Mobile Friendly Code -->
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://preview.c9users.io/jamesnotfu/serveon/bootstrap-3.3.7-dist/css/bootstrap.css?_c9_id=livepreview1&_c9_host=https://ide.c9.io" type="text/css" />
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="https://preview.c9users.io/jamesnotfu/dashable/CSS/dashable.css?_c9_id=livepreview0&_c9_host=https://ide.c9.io" type="text/css" />
+        
+        <!-- Navbar CSS/JS -->
+        <link rel="stylesheet" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/CSS/navbar.css?_c9_id=livepreview0&_c9_host=https://ide.c9.io" type="text/css" />
+        <script src="https://preview.c9users.io/jamesnotfu/dashable/JS/navbar.js?_c9_id=livepreview2&_c9_host=https://ide.c9.io"></script>      
+        <!-- Custom JS/jQuery -->
+        <script type="text/javascript" src="https://preview.c9users.io/jamesnotfu/dashable/JS/dashable.js?_c9_id=livepreview3&_c9_host=https://ide.c9.io"></script>
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600|Open+Sans:300,400,600|Raleway:200,300,400,500|Poppins:200,300,400,500|Catamaran:200,300,400,500" rel="stylesheet">
+
+        <!-- Favicon/Logo -->
+        <link rel="shortcut icon" href="" />
+        
+        <!-- Hover Effects -->
+	    <link href="https://preview.c9users.io/jamesnotfu/jamesfu/Hover-master/css/hover.css" rel="stylesheet" type="text/css">
+        
+        <!-- Font Awesome -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Typing Animation -->
+        <script src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/JS/typinganimation.js?_c9_id=livepreview5&_c9_host=https://ide.c9.io"></script>
+        
+    </head>
+    <body>
+        <nav>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 brand-holder">
+                <h3 class="text-center bold">
+                    <a class="serveonbtn center-block x" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonhome.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">SERVEON</a>
+                </h3>
+                <div>
+                    <div class="container-fluid">
+                        <h5 class="menuholder">
+                            <ul class="menuWrapper">
+                                <li class="navli"><a class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonhome.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">Home</a></li>
+                        	    <li class="navli"><a class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonsignup.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io">Sign Up</a></li>
+                    		    <li class="navli"><a class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonlogin.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">Login</a></li>
+                    		    <li class="navli"><a class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonabout.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">About Us</a></li>
+                    		    <li class="navli"><a id="current-page" class="navlink hvr-grow" href="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/HTML/serveonmeettheteam.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io">Meet the Team</a></li>
+                    		    <li class="navli">
+            		                <label id="searchbarlabel" onclick="searchshow()" for="searchbar"><span class="glyphicon glyphicon-search"></span></label>
+                    		        <input id="searchbar" type="search" name="search"/>
+                    		        <button id="searchbutton" class="btn btn-default">GO</button>
+                    		    </li>
+                    	    </ul>
+                        </h5>
+                	</div>
+                </div>
+            </div>
+        </nav>
+        <section class="information-odds text-center">
+            <h1 class="pageheader">
+                Meet The Team
+            </h1>
+            <br>
+            <h4 class="pagedescriptor">
+                Get to know us a little bit.
+            </h4>
+        </section>
+        <br/>
+        <section class="information-evens text-center">
+            <div class="container">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 profile">
+                    <img src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/Images/profile-icon.png?_c9_id=livepreview3&_c9_host=https://ide.c9.io" class="img-circle profiles"/>
+                    <h4>Rishi Pappu</h4>
+                    <p>One of the programmers here at Dashable</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 profile">
+                    <img src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/Images/profile-icon.png?_c9_id=livepreview3&_c9_host=https://ide.c9.io" class="img-circle profiles"/>
+                    <h4>James Fu</h4>
+                    <p>One of the programmers here at Dashable</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 profile">
+                    <img src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/Images/profile-icon.png?_c9_id=livepreview3&_c9_host=https://ide.c9.io" class="img-circle profiles"/>
+                    <h4>Audrey Im</h4>
+                    <p>One of the programmers here at Dashable</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 profile">
+                    <img src="https://preview.c9users.io/jamesnotfu/serveon/ServeOn%20v1/Images/profile-icon.png?_c9_id=livepreview3&_c9_host=https://ide.c9.io" class="img-circle profiles"/>
+                    <h4>Ayla Teittinen</h4>
+                    <p>Lorem ipsum and whatever comes after it</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="footercontentspacer text-center madeby">
+            <h1><i class="fa fa-code"></i></h1>
+            <h4>Coded by Rishi Pappu, James Fu, Audrey Im, and Ayla Teittinen.</h4>
+            <br>
+        </section>
+        <footer class="container footerpadding col-md-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 footersection">
+                <div class="text-center subscriptionholder">
+                <form action="//c9users.us15.list-manage.com/subscribe/post?u=d4292080ad064f941cce6dc2f&amp;id=851d359a58" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="row">
+                        <label for="subscribe" class="mc_embed_signup_scroll"><button id="subscribebtn">Subscribe</button></label>
+                        <input id="subscribe" type="email" value="" name="EMAIL" class="required email">
+                    </div>
+                </form>
+                </div>
+                <div class="text-center">
+                    <h5>Subscribe to our newsletter to stay connected! It's free!</h5>
+                    <h5>Get regular updates on the latest features!</h5>
+                </div>
+            </div>
+            <div class="footersection text-center">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <ul class="footerlist">
+                        <h4>Contact Us</h4>
+                        <li>
+                            <a href="">8151 Village Pkwy, Dublin,<br> CA 94568</a>
+                        </li>
+                        <br/>
+                        <li>
+                            <a href="tel:+1-555-555-555">(555)-555-555</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <ul class="footerlist">
+                        <h4>Additional Links</h4>
+                        <li class="additionallink hvr-grow">
+                            <a href="">Find Events</a>
+                        </li>
+                        <li class="additionallink hvr-grow">
+                            <a href="">Organize Events</a>
+                        </li>
+                        <li class="additionallink hvr-grow">
+                            <a href="">Help</a>
+                        </li>
+                        <li class="additionallink hvr-grow">
+                            <a href="">FAQs</a>
+                        </li>
+                        <li class="additionallink hvr-grow">
+                            <a href="">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footersection text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3>
+                        <a href="#" class="socialicon">
+                            <i class="fa fa-facebook fa-fw"></i>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="socialicon">
+                            <i class="fa fa-twitter fa-fw"></i>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="socialicon">
+                            <i class="fa fa-instagram fa-fw"></i>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="socialicon">
+                            <i class="fa fa-google-plus fa-fw"></i>
+                        </a>
+                        &nbsp;
+                        <a href="#" class="socialicon">
+                            <i class="fa fa-github fa-fw"></i>
+                        </a>
+                        &nbsp;
+                        <a href="mailto:" class="socialicon">
+                            <i class="fa fa-envelope fa-fw"></i>
+                        </a>
+                    </h3>
+                    <br/>
+                    <h5 class="allrightsreserved">
+                        &copy;ServeOn. All Rights Reserved. ServeOn is a registered trademark of the ServeOn Group. <a href="#" class="privacyandterms">Privacy</a> and <a href="#" class="privacyandterms">Terms</a>
+                    </h5>
+                    <br/>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <!-- Coded by Rishi Pappu and James Fu -->
+</html>
