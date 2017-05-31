@@ -56,3 +56,11 @@ The following action will teach you how to create an IFTT action with the IFTTT 
 15. Lastly, press and hold on your Amazon Dash button until the blue light starts blinking.
 
 16. On a Wifi-enabled device, connect to the Wifi service Amazon ConfigureMe.
+
+17. Open a new browser window, and go to 192.168.0.1
+
+18. Replace the current MAC address(es) with your MAC address, which should be displayed on the Amazon Dash page.
+
+19. If you do not have two Amazon Dashes, you can just delete the elif source_mac == second statement, and also the variable that stores the mac address of the second dash
+
+20. You're all set! Save the code and run it with SUDO! Make sure that you have connected it with the Amazon Shopping app and that your Dash is connected to wifi, and not assigned to a product (to prevent accidental purchases).
