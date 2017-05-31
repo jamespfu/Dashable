@@ -1,6 +1,6 @@
 # Dashable
 Dashable is a python script for the Amazon Dash, easily enabling you to automate button press actions via IFTTT.
-This script for an entrepreneurship project that we did in school.
+This script was for an entrepreneurship project that we did in school.
 
 ## Website
 You can visit the UI for the e-commerce website we created at the url https://dashable.cf/.
