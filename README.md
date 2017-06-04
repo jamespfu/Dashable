@@ -6,10 +6,10 @@ This script was for an entrepreneurship project that we did in school.
 You can visit the UI for the e-commerce website we created at the url https://dashable.cf/.
 
 ## Python
-The Python code can be found in the 'Python' folder. :)
+The Python code can be found in the 'Python' folder. It works by detecting ARP packets sent over the network and triggering actions if there are any :)
 
 ## Android
-We also created an Android application that intercepted UDP packets sent form an Ubuntu server, and then sent the desired SMS message to the specified recipient.
+We also created an Android application that intercepted UDP packets sent form an Ubuntu server, and then sent the desired SMS message to the specified recipient. You can download the .apk file, but its in beta so it isn't fully-functional.
 
 ## Instructions
 ### Connecting to IFTTT
