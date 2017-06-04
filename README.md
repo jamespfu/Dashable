@@ -9,7 +9,7 @@ You can visit the UI for the e-commerce website we created at the url https://da
 The Python code can be found in the 'Python' folder. :)
 
 ## Android
-We also create an Android
+We also created an Android application that intercepted UDP packets sent form an Ubuntu server, and then sent the desired SMS message to the specified recipient.
 
 ## Instructions
 ### Connecting to IFTTT
