@@ -61,11 +61,6 @@ html, body {
 .infopadding {
     padding-top: 2em;
 }
-/*
-.brand-holder {
-    box-shadow: 0px 2px 5px #555;
-}
-*/
 
 .purple {
     color: #50A6C2;
@@ -602,7 +597,6 @@ nav a:hover, a:visited, a:link, a:active {
     padding: 0;
     width: 100%;
     background-image: url('https://preview.c9users.io/jamesnotfu/dashable/Images/mike-dennler-173199.jpg?_c9_id=livepreview4&_c9_host=https://ide.c9.io');
-    /*transition: background-image ease-in 3.5s;*/
 }
 .splash2 {
     background-repeat: no-repeat;
@@ -612,7 +606,6 @@ nav a:hover, a:visited, a:link, a:active {
     margin: 0;
     padding: 0;
     width: 100%;
-    /*background-image: url('https://preview.c9users.io/jamesnotfu/dashable/Images/matt-howard-248418.jpg?_c9_id=livepreview1&_c9_host=https://ide.c9.io')*/
     background-color: #50A6C2
 }
 
@@ -620,7 +613,6 @@ nav a:hover, a:visited, a:link, a:active {
     background: transparent;
     font-family: 'Montserrat';
     color: #fff;
-    /* padding: 2em; */
     text-align: center;
     font-weight: 100;
 }
